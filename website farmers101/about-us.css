@@ -1,0 +1,222 @@
+.about-us {
+    background-color: black;
+    padding: 5rem 0;
+    /* Optional: Adds spacing around the About Us section */
+    height: 100vh;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    /* Ensures the content and image are spread out */
+    align-items: center;
+    /* Centers the content vertically */
+    padding: 0 2rem;
+}
+
+.content-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    /* Centers the image horizontally */
+    align-items: center;
+    /* Centers the image vertically */
+}
+.content-img img{
+    width: 20rem;
+        /* Adjust based on the desired size */
+        height: 20rem;
+        /* Adjust based on the desired size */
+        object-fit: cover;
+        border-radius: 50%;
+        /* Makes the image round */
+}
+
+.content-content {
+    width: 50%;
+    color: white;
+    /* border: 1px solid red; */
+}
+
+.content-content-title {
+
+}
+
+.green-line {
+    width: 50px;
+        height: 2px;
+        background-color: green;
+        margin-bottom: 2rem;
+
+}
+
+.content-icons {
+    display: flex;
+        /* gap: 2rem; */
+        margin-top: 1rem;
+        /* border: 1rem solid red; */
+        /* padding: 1rem; */
+        
+
+}
+
+.about-us {
+    background-color: black;
+    padding: 5rem 0;
+    /* Optional: Adds spacing around the About Us section */
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    /* Ensures the content and image are spread out */
+    align-items: center;
+    /* Centers the content vertically */
+    padding: 0 2rem;
+   
+}
+
+.content-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    /* Centers the image horizontally */
+    align-items: center;
+    /* Centers the image vertically */
+}
+
+.content-img img {
+    width: 20rem;
+    /* Adjust based on the desired size */
+    height: 20rem;
+    /* Adjust based on the desired size */
+    object-fit: cover;
+    border-radius: 50%;
+    /* Makes the image round */
+}
+
+.content-content {
+    width: 50%;
+    color: white;
+    padding: 20px;
+    /* Adds padding inside the content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.content-content-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+        /* Centers the title */
+}
+
+.green-line {
+    width: 7rem;
+    height: 0.2rem;
+    background-color: green;
+    margin-bottom: 2rem;
+    
+}
+.para{
+    line-height: 2rem;
+}
+
+.content-icons {
+    display: flex;
+    gap: 10rem;
+    margin-top: 1rem;
+    /* border: 1rem solid red; */
+    /* justify-content : space-between; */
+    
+
+}
+
+.social-icon i {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease;
+    /* Smooth color change on hover */
+}
+
+.social-icon i:hover {
+    color: #3498db;
+    /* Change to a color on hover */
+}
+
+@media screen and (max-width: 500px) {
+    .about-us {
+        padding: 3rem 0;
+        /* Adjust padding to fit smaller screens */
+        height: auto;
+        /* Adjust height to fit content */
+    }
+
+    .about-content {
+        display: block;
+        /* Stack the content and image vertically */
+        padding: 0 1rem;
+        /* Reduced padding */
+    }
+
+    .content-img {
+        width: 100%;
+        /* Make the image take up full width */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        /* Add space below the image */
+    }
+
+    .content-img img {
+        width: 15rem;
+        /* Adjust the image size to fit smaller screens */
+        height: 15rem;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .content-content {
+        width: 100%;
+        /* Make the content take up full width */
+        text-align: center;
+        padding: 0;
+        display: block;
+    }
+
+    .content-content-title {
+        font-size: 1.5rem;
+        /* Adjust font size for smaller screens */
+        margin-bottom: 1rem;
+    }
+
+    .green-line {
+        width: 7rem;
+            height: 0.2rem;
+            background-color: green;
+            margin: 0 auto;
+            /* This centers the green line horizontally */
+            margin-bottom: 2rem;
+    }
+
+    .para {
+        line-height: 1.5rem;
+        font-size: 1rem;
+        /* Adjust paragraph size for readability on small screens */
+    }
+
+    .content-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .social-icon i {
+        font-size: 20px;
+        /* Adjust icon size for smaller screens */
+    }
+}

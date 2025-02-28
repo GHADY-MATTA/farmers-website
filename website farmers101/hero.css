@@ -1,0 +1,271 @@
+main {
+    height: 60%;
+}
+
+
+
+section {
+    width: 100%;
+    float: left;
+    padding: 1rem;
+    
+}
+
+
+
+
+
+
+/* ------------------------- hero -----------------------------  */
+
+.hero {
+
+    width: 100%;
+    height: 100vh;
+    /* Adjust height as needed */
+    background-image: url(rice-fields-agriculture-paddy-fields-landscape-terrace-3840x2160-1247.jpg);
+    background-size: cover;
+    /* Ensures the image covers the section */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the background image from repeating */
+    display: flex;
+    /* Use flexbox to center content if needed */
+    align-items: flex-start;
+    /* Vertically center the hero content */
+    justify-content: flex-start;
+    /* Horizontally center the hero content */
+
+}
+
+.hero-content {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 3rem;
+    margin-top:10rem ;
+   
+
+
+
+}
+
+.hero__content--links {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    
+
+}
+
+.new-div{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top:-9rem ;
+}
+
+
+
+.hero__content--mini-title {
+    font-family: var(--font-family-20);
+    color: white;
+    font-size:3rem;
+   
+
+}
+
+.hero__content--title {
+    font-family: var(--font-family-end);
+    color:black;
+    font-size: 2.6rem;
+}
+
+.hero__content--para {
+    color: white;
+    font-size: 1.5rem;
+ 
+}
+
+
+
+.hero__content--links__my-works {
+    background-color: rgba(230, 230, 230, 0.349);
+    border-radius: 1rem 2rem;
+    padding: 1rem 3rem 1rem 3rem;
+    color: white;
+    
+
+
+}
+
+.hero__content--links__contact {
+    border-radius: 2rem 1rem;
+    padding: 1rem 3rem 1rem 3rem;
+    color:white;
+    border: 1px solid white;
+    
+
+}
+
+.hero__content--links__contact,
+.hero__content--links__my-works {
+    text-align: center;
+    transition: all 0.25s ease-in-out;
+    font-family: var(--font-family-end);
+}
+
+.hero__content--links__my-works:hover {
+    border-radius: 2rem 1rem;
+        
+        color: white;
+        border: 1px solid white;
+       background-color: transparent;
+        text-align: center;
+}
+
+.hero__content--links__contact:hover {
+    background-color: rgba(230, 230, 230, 0.349);
+    border-radius: 1rem 2rem;
+    
+    color: white;
+}
+@media screen and (min-width: 1000px) {
+    .new-div {
+            margin-top: -5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+    
+        }
+}
+
+/* 
+
+/* ------------------------- hero -----------------------------  */
+@media screen and (max-width: 500px) {
+    .hero {
+    
+            width: 100%;
+            height: 100vh;
+            /* Adjust height as needed */
+            background-image: url(rice-fields-agriculture-paddy-fields-landscape-terrace-3840x2160-1247.jpg);
+            background-size: cover;
+            /* Ensures the image covers the section */
+            background-position: center;
+            /* Centers the image */
+            background-repeat: no-repeat;
+            /* Prevents the background image from repeating */
+            display: flex;
+            /* Use flexbox to center content if needed */
+            align-items: flex-start;
+            /* Vertically center the hero content */
+            justify-content: flex-start;
+            /* Horizontally center the hero content */
+            overflow: hidden;
+                /* Prevent horizontal scrolling */
+    
+        }
+                .new-div{
+            margin-top:-5rem ;
+            display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+            
+        }
+        .hero-content {
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;
+            
+            
+               
+    
+    
+        }
+    
+        .hero__content--links {
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-start;
+    
+    
+        }
+    
+    
+    
+    
+    
+        .hero__content--mini-title {
+            font-family: var(--font-family-20);
+            color: white;
+            font-size: 2.2rem;
+            
+            
+
+    
+    
+        }
+    
+        .hero__content--title {
+            font-family: var(--font-family-end);
+            color: black;
+            font-size: 2rem;
+            
+        }
+    
+        .hero__content--para {
+            color: white;
+            font-size: 1.2rem;
+                
+    
+        }
+    
+    
+    
+        .hero__content--links__my-works {
+            background-color: rgba(230, 230, 230, 0.349);
+            border-radius: 1rem 2rem;
+            padding: 1rem 3rem 1rem 3rem;
+            color: white;
+    
+    
+    
+        }
+    
+        .hero__content--links__contact {
+            border-radius: 2rem 1rem;
+            padding: 1rem 3rem 1rem 3rem;
+            color: white;
+            border: 1px solid white;
+    
+    
+        }
+    
+        .hero__content--links__contact,
+        .hero__content--links__my-works {
+            text-align: center;
+            transition: all 0.25s ease-in-out;
+            font-family: var(--font-family-end);
+        }
+    
+        .hero__content--links__my-works:hover {
+            border-radius: 2rem 1rem;
+    
+            color: white;
+            border: 1px solid white;
+            background-color: transparent;
+            text-align: center;
+        }
+    
+        .hero__content--links__contact:hover {
+            background-color: rgba(230, 230, 230, 0.349);
+            border-radius: 1rem 2rem;
+    
+            color: white;
+        }
+}

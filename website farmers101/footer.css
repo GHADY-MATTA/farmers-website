@@ -1,0 +1,170 @@
+/* General Footer */
+.footer {
+    width: 100%;
+    background-color: #111;
+    /* Dark background for contrast */
+    color: #fff;
+    padding: 3rem 0;
+    /* Increased padding for a more spacious footer */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    gap: 3rem;
+    /* Gap between logo and contact section */
+}
+
+/* Footer Logo */
+.footer-logo img {
+    max-width: 180px;
+    transition: transform 0.3s ease;
+    /* Smooth hover transition */
+}
+
+.footer-logo img:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
+}
+
+/* Footer Contact Information */
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.footer-contact h3 {
+    font-size: 1.5rem;
+    /* Larger heading for better visibility */
+    margin-bottom: 1rem;
+    color: #D4AC0D;
+    /* Gold accent for contrast */
+}
+
+.footer-contact p {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-contact a:hover {
+    color: #D4AC0D;
+    /* Gold accent on hover */
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #ccc;
+    /* Slightly lighter text for the bottom section */
+}
+
+/* WhatsApp Icon - Floating in Bottom-Right Corner */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    z-index: 999;
+    /* Ensures the icon is above other content */
+}
+
+.whatsapp-icon i {
+    font-size: 50px;
+    /* Icon size */
+    color: #25D366;
+    /* WhatsApp green */
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for WhatsApp Icon */
+.whatsapp-icon i:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    /* More prominent shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* Footer Responsive Design for Small Screens under 500px */
+@media (max-width: 500px) {
+    .footer {
+        padding: 2rem 1rem;
+        /* Reduced padding for smaller screens */
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        /* Increased gap between sections */
+        padding: 1rem;
+    }
+
+    .footer-logo img {
+        max-width: 150px;
+        /* Make logo smaller on smaller screens */
+    }
+
+    .footer-contact h3 {
+        font-size: 1.25rem;
+        /* Slightly smaller font size for headings */
+    }
+
+    .footer-contact p {
+        font-size: 0.9rem;
+        /* Smaller font size for better readability */
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+        /* Smaller text in the bottom section */
+    }
+
+    .whatsapp-icon {
+        bottom: 3rem;
+        /* Adjusted position for smaller screens */
+        right: 1.5rem;
+        /* Adjusted position */
+    }
+
+    .whatsapp-icon i {
+        font-size: 40px;
+        /* Slightly smaller icon */
+        padding: 12px;
+        /* Reduced padding */
+    }
+}

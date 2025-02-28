@@ -1,0 +1,362 @@
+/* ---------------------------------- Header Styling ------------------------------ */
+
+/* ---------------------------------- Header Styling ------------------------------ */
+header {
+    background-color: transparent;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    /* Ensures logo and nav are on opposite ends */
+    align-items: center;
+    /* Vertically center the content */
+    font-family: var(--font-family-60);
+    position: fixed;
+    /* Fix header at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensures the header stays above other content */
+    padding: 0 2rem;
+    /* Optional: Adds space inside the header */
+}
+.header__nav--link.active {
+    color: #D4AC0D;
+    /* Gold color */
+}
+
+/* ----------------------------- Logo Styling ------------------------------ */
+.logo img {
+    width: 20rem;
+    /* Adjust logo width */
+    height: 5vh;
+    /* Adjust logo height */
+    padding-left: 1rem;
+    /* Adds space between logo and the edge */
+}
+
+/* ---------------------------- Navigation Styling ----------------------------- */
+nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 3rem;
+    /* Adds space between navigation items */
+    list-style: none;
+    /* Removes bullets from list */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Makes text iconic and clean */
+    position: relative;
+    transition: color white    0.3s ease, transform 0.3s ease;
+    /* Smooth text color and scale transition */
+    padding-bottom: 10px;
+    /* Adds space for the underline */
+}
+
+/* ---------------------- Hover & Underline Animation ------------------------ */
+/* Create the sliding underline using pseudo-element */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    /* Positioned at the bottom of the link */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    /* Underline thickness */
+    background-color: white;
+    transition: width 0.3s ease, left 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect: text color change & underline animation */
+nav ul li a:hover {
+    color: #ccc;
+    /* Change text color on hover */
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+    /* Expands the underline */
+}
+
+/* --------------------------- Active Click Effect -------------------------- */
+/* Scale down effect on active (click) */
+nav ul li a:active {
+    transform: scale(0.95);
+    /* Subtle shrink effect */
+}
+
+/* ----------------------------- Logo Styling ------------------------------ */
+
+.logo img {
+    width: 20rem;
+    /* Adjust logo width */
+    height: 5vh;
+    /* Adjust logo height */
+    padding-left: 1rem;
+    /* Adds space between logo and the edge */
+}
+
+/* ---------------------------- Navigation Styling ----------------------------- */
+
+nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    /* Adds space between navigation items */
+    list-style: none;
+    /* Removes bullets from list */
+    margin: 0;
+    padding: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Makes text iconic and clean */
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Smooth text color and scale transition */
+    padding-bottom: 10px;
+    /* Adds space for the underline */
+}
+
+/* ---------------------- Hover & Underline Animation ------------------------ */
+
+/* Create the sliding underline using pseudo-element */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    /* Positioned at the bottom of the link */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    /* Underline thickness */
+    background-color: white;
+    transition: width 0.3s ease, left 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect: text color change & underline animation */
+nav ul li a:hover {
+    color: #ccc;
+    /* Change text color on hover */
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+    /* Expands the underline */
+}
+
+/* --------------------------- Active Click Effect -------------------------- */
+
+/* Scale down effect on active (click) */
+nav ul li a:active {
+    transform: scale(0.95);
+    /* Subtle shrink effect */
+}
+
+.header__nav {
+
+    overflow: hidden;
+    /* Add this to hide the scrollbar */
+}
+.header__nav--link.active {
+    color: #D4AC0D !important;
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+    .header .logo {
+        width: 7rem;
+    }
+}
+/*------------------------- Responsive Design (Optional) -------------------- */
+@media screen and (max-width: 1000px) {
+
+    /* ---------------------------------- Hamburger Button ------------------------------ */
+    .hamburger {
+        position: fixed;
+        top: 2rem;
+        left: 80%;
+        background-color: black;
+        color: white;
+        padding: 1rem;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        /* Adjust the gap between lines */
+        z-index: 10;
+    }
+
+    .hamburger__line {
+        height: 3px;
+        /* Increase the line thickness for visibility */
+        background-color: white;
+        transition: all 0.25s ease-in-out;
+        width: 30px;
+        /* Adjust width to make lines visible */
+    }
+
+    /* -------------------------- Header Navigation (Mobile View) ---------------------- */
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        background-color: black;
+        min-height: 60vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9;
+        transform: scale(0);
+        transition: all 0.65s ease-in-out;
+        overflow: hidden;
+        /* Add this to hide the scrollbar */
+
+    }
+
+    .header__nav div {
+        margin-top: -5rem;
+    }
+
+    .display__nav {
+        transform: scale(1);
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 3rem;
+        /* Adds space between nav items vertically */
+
+    }
+
+    .hamburger__line-1 {
+        transform: rotate(45deg) translateX(6px) translateY(6px);
+        /* Make sure the first line moves to form the 'X' */
+    }
+
+    .hamburger__line-2 {
+        visibility: hidden;
+        /* Hide the middle line */
+    }
+
+    .hamburger__line-3 {
+        transform: rotate(-45deg) translateX(6px) translateY(-6px);
+        /* Make sure the last line moves to complete the 'X' */
+    }
+        .header__nav--link.active {
+            color: #D4AC0D;
+            /* Gold color */
+        }
+}
+
+
+
+
+/* ------------------------- Responsive Design (Optional) -------------------- */
+
+
+/* ------------------------- Responsive Design -------------------- */
+
+/* Between 300px and 500px */
+@media screen and (max-width: 500px) {
+    header {
+        height: 5vh;
+        /* Reduce header height */
+        padding: 0 1rem;
+    }
+      
+
+    .logo img {
+        width: 10rem;
+        /* Reduce logo size */
+        height: 3.5vh;
+    }
+
+    nav ul {
+        gap: 3rem;
+        /* Reduce space between nav items */
+
+    }
+
+    nav ul li a {
+
+        font-size: 1.5rem;
+        /* Smaller font size */
+        padding-bottom: 1rem;
+        /* Adjust spacing */
+
+    }
+
+    .hamburger {
+        left: 85%;
+    }
+        .header__nav--link.active {
+            color: #D4AC0D;
+            /* Gold color */
+        }
+}
+
+/* Between 300px and below */
+@media screen and (max-width: 300px) {
+    header {
+        height: 4.5vh;
+        /* Even smaller header */
+        padding: 0 0.5rem;
+    }
+    .header .logo{
+        text-align: center;
+    }
+
+    .logo img {
+        width: 8rem;
+        height: 3vh;
+    }
+
+    nav ul {
+        gap: 0.8rem;
+    }
+
+    nav ul li a {
+        font-size: 0.7rem;
+        /* Make text smaller */
+        padding-bottom: 3px;
+
+    }
+
+    .hamburger {
+        left: 80%;
+    }
+        .header__nav--link.active {
+            color: #D4AC0D;
+            /* Gold color */
+        }
+}
