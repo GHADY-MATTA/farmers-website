@@ -310,3 +310,5 @@ defaults:
       type: "pages"
     values:
       layout: "default"  # Ensure the page uses a default layout
+source: website-farmer  # Make sure Jekyll looks in the right folder
+destination: _site  # Default destination folder for generated content
